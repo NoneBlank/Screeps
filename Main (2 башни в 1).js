@@ -42,6 +42,16 @@ module.exports.loop = function ()
     }
     
     //---- Запуск башен ----//
+    /**
+    //Модуль башен 1 + 1 - CPU?
+    var tower1 = Game.getObjectById('5beef997c093d8686447a469');
+    modulTower1.run(tower1);
+    
+    var tower2 = Game.getObjectById('5bf6d65653e439726ea18374');
+    modulTower2.run(tower2);
+    **/
+    
+    //Модуль башен 2 в 1 - CPU?
     var towers = Game.rooms.E15S29.find(FIND_STRUCTURES, {filter: (s) => s.structureType == STRUCTURE_TOWER});
     for(let tower of towers)
     {
